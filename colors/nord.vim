@@ -662,6 +662,14 @@ hi! link StartifyBracket Delimiter
 hi! link StartifySlash Normal
 hi! link StartifySpecial Comment
 
+" vim-easymotion
+" > easymotion/vim-easymotion
+call s:hi("EasyMotionTarget", s:nord13_gui, "", s:nord13_term, "", s:bold, "")
+hi! link EasyMotionShade Comment
+
+call s:hi("EasyMotionTarget2First", s:nord8_gui, "", s:nord8_term, "", s:bold, "")
+call s:hi("EasyMotionTarget2Second", s:nord9_gui, "", s:nord9_term, "", s:bold, "")
+
 "+--- Languages ---+
 " Haskell
 " > neovimhaskell/haskell-vim
