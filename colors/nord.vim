@@ -646,6 +646,11 @@ hi! link ClapProviderAbout ClapDisplay
 hi! link ClapProviderColon Type
 hi! link ClapProviderId Type
 
+" vim-indent-guides
+" > nathanaelkane/vim-indent-guides
+call s:hi("IndentGuidesEven", "", s:nord1_gui, "", s:nord1_term, "", "")
+call s:hi("IndentGuidesOdd", "", s:nord2_gui, "", s:nord3_term, "", "")
+
 " vim-plug
 " > junegunn/vim-plug
 call s:hi("plugDeleted", s:nord11_gui, "", "", s:nord11_term, "", "")
@@ -778,3 +783,17 @@ hi! link VimwikiList markdownListMarker
 " YAML
 " > stephpy/vim-yaml
 call s:hi("yamlKey", s:nord7_gui, "", s:nord7_term, "", "", "")
+
+"+------------+
+"+ Public API +
+"+------------+
+"+--- Functions ---+
+
+function! NordPalette() abort
+  let ret = {}
+  for color in range(16)
+    execute 'let ret["nord'.color.'"] = s:nord'.color.'_gui'
+  endfor
+  let ret["nord3_bright"] = s:nord3_gui_bright
+  return ret
+endfunction
