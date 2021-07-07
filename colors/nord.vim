@@ -573,6 +573,11 @@ call s:hi("CocWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("CocErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
 call s:hi("CocInfoSign" , s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("CocHintSign" , s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("CocCodeLens" , s:nord3_gui_bright, "", s:nord3_term, "", "", "")
+call s:hi("CocFadeOut" , s:nord3_gui, "", s:nord3_term, "", "", "")
+
+" coc-explorer
+" > weirongxu/coc-explorer
 
 " Nvim LSP
 " > neovim/nvim-lsp
@@ -677,6 +682,13 @@ hi! link EasyMotionShade Comment
 
 call s:hi("EasyMotionTarget2First", s:nord8_gui, "", s:nord8_term, "", s:bold, "")
 call s:hi("EasyMotionTarget2Second", s:nord9_gui, "", s:nord9_term, "", s:bold, "")
+
+" hop.nvim
+" > phaazon/hop.nvim
+hi! link HopNextKey EasyMotionTarget
+hi! link HopUnmatched EasyMotionShade
+hi! link HopNextKey1 EasyMotionTarget2First
+hi! link HopNextKey2 EasyMotionTarget2Second
 
 "+--- Languages ---+
 " Haskell
