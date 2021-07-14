@@ -616,6 +616,14 @@ call s:hi("NERDTreeExecFile", s:nord7_gui, "", s:nord7_term, "", "", "")
 hi! link NERDTreeDirSlash Keyword
 hi! link NERDTreeHelp Comment
 
+" nvim-tree.lua
+" > kyazdani42/nvim-tree.lua
+call s:hi("NvimTreeSpecialFile", s:nord13_gui, "", s:nord13_term, "", s:underline.s:bold, "")
+hi! link LspDiagnosticsError       LspDiagnosticsDefaultError
+hi! link LspDiagnosticsWarning     LspDiagnosticsDefaultWarning
+hi! link LspDiagnosticsInformation LspDiagnosticsDefaultInformation
+hi! link LspDiagnosticsHint        LspDiagnosticsDefaultHint
+
 " CtrlP
 " > ctrlpvim/ctrlp.vim
 hi! link CtrlPMatch Keyword
